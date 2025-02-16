@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+   <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main w-full min-h-screen">
+      <!-- page-1 -->
+      <div
+        class="w-full home-section bg-[linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(https://images.unsplash.com/photo-1497250681960-ef046c08a56e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center text-white opacity-90 flex flex-col items-center"
+      >
+        <!-- Improved Navigation Bar -->
+        <nav class="w-full px-4 py-3 md:py-5 relative z-10">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center justify-center gap-[35px]">
+            <a
+              href="#"
+              class="hover:underline transition-all duration-300 ease-in-out"
+              >The Nessie</a
+            >
+            <a
+              href="#"
+              class="hover:underline transition-all duration-300 ease-in-out"
+              >Sightings</a
+            >
+            <a
+              href="#"
+              class="text-3xl font-[Bizantheum] font-bold hover:text-red-400 transition-all duration-300 ease-in-out px-4"
+              >Ness</a
+            >
+            <a
+              href="#"
+              class="hover:underline transition-all duration-300 ease-in-out"
+              >Team</a
+            >
+            <a
+              href="#"
+              class="hover:underline transition-all duration-300 ease-in-out"
+              >Follow Us</a
+            >
+          </div>
+
+          <!-- Mobile Navigation -->
+          <div class="md:hidden flex items-center justify-between">
+            <a href="#" class="text-2xl font-[Bizantheum] font-bold">Ness</a>
+            <button
+              id="mobile-menu-button"
+              class="focus:outline-none"
+              aria-label="Toggle menu"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Mobile Menu Dropdown -->
+          <div
+            id="mobile-menu-dropdown"
+            class="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 shadow-lg rounded-b-lg transition-all duration-300 ease-in-out transform scale-y-0 origin-top hidden"
+          >
+            <div class="flex flex-col py-3">
+              <a
+                href="#"
+                class="px-4 py-2 hover:bg-gray-800 transition-colors duration-300"
+                >The Nessie</a
+              >
+              <a
+                href="#"
+                class="px-4 py-2 hover:bg-gray-800 transition-colors duration-300"
+                >Sightings</a
+              >
+              <a
+                href="#"
+                class="px-4 py-2 hover:bg-gray-800 transition-colors duration-300"
+                >Team</a
+              >
+              <a
+                href="#"
+                class="px-4 py-2 hover:bg-gray-800 transition-colors duration-300"
+                >Follow Us</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <div
+          class="content w-full px-4 pt-4 md:pt-[5%] flex flex-col items-center justify-center"
+        >
+          <h1
+            class="text-4xl sm:text-6xl md:text-8xl leading-tight md:leading-[0.8] font-[350] font-[bizantheum] text-center"
+          >
+            This Card<br />is
+            <sub
+              class="font-[mandala] text-[80px] sm:text-[100px] md:text-[150px]"
+              >wellness</sub
+            >
+          </h1>
+
+          <p class="pt-6 md:pt-[60px] text-center text-sm md:text-base">
+            Get the wellness rewards and benefits you've always
+            <br class="hidden md:block" />dreamed of with the first Ness Credit
+            Card.
+          </p>
+
+          <img
+            class="credit-card w-[200px] sm:w-[250px] md:w-[300px] mt-6 md:mt-[30px] rounded-[12px]"
+            src="card.png"
+            alt="Ness credit card"
+          />
+
+          <p class="text-center text-[10px] md:text-[12px] mt-3 md:mt-[10px]">
+            As Seen in
+          </p>
+
+          <div
+            class="p-3 md:p-5 logos flex flex-wrap justify-center items-center gap-4 md:gap-[50px]"
+          >
+            <h3 class="font-[mandala] text-[24px] md:text-[40px]">Greatist</h3>
+            <h3 class="font-[bizantheum] text-[24px] md:text-[40px] font-bold">
+              healthline
+            </h3>
+            <h3 class="text-[14px] md:text-[20px] font-medium">
+              W E L L + G O O D
+            </h3>
+            <h3
+              class="font-[Montserrat] text-[14px] md:text-[20px] font-bold uppercase"
+            >
+              fortune
+            </h3>
+            <h3 class="font-[voyage] text-[24px] md:text-[40px]">wsj</h3>
+            <h3 class="font-[bizantheum] text-[24px] md:text-[40px] font-bold">
+              Forebs
+            </h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- page-2 -->
+      <div
+        class="page2 w-full bg-white flex flex-col items-center justify-center px-4 sm:px-6 md:px-10"
+      >
+        <h1
+          class="pt-10 sm:pt-16 md:pt-[100px] font-[bizantheum] capitalize text-center text-4xl sm:text-6xl md:text-8xl"
+        >
+          The card that <br />keeps you healthy
+        </h1>
+
+        <p
+          class="p-4 sm:p-5 md:p-[30px] text-xs sm:text-sm md:text-[14px] text-center"
+        >
+          The first premium card that rewards all your healthy actions and
+          <br class="hidden md:block" />
+          benefits from your favorite brands, too<sup>2</sup>
+        </p>
+
+        <div
+          class="buttons flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 md:gap-[20px]"
+        >
+          <button
+            class="w-full sm:w-auto bg-green-900 text-white px-6 sm:px-8 md:px-10 py-2 rounded-full hover:bg-white hover:text-green-900 hover:border hover:border-green-900 transition-all duration-300 mb-3 sm:mb-0"
+          >
+            Reserve
+          </button>
+          <button
+            class="w-full sm:w-auto border border-green-900 text-green-900 px-6 sm:px-8 md:px-10 py-2 rounded-full hover:bg-green-900 hover:text-white transition-all duration-300"
+          >
+            Explore
+          </button>
+        </div>
+
+        <p
+          class="p-2 sm:p-3 md:p-[10px] text-[10px] sm:text-[11px] md:text-[12px] text-center mt-3"
+        >
+          FYI : The card's app is iPhone-only for now
+        </p>
+
+        <div
+          class="p-6 sm:p-8 md:p-[50px] reward-pay flex flex-col sm:flex-row justify-center items-center gap-8 sm:gap-12 md:gap-[100px]"
+        >
+          <div class="flex flex-col items-center justify-center mb-6 sm:mb-0">
+            <h1
+              class="font-[bizantheum] text-4xl sm:text-5xl md:text-[70px] font-bold leading-[0.9]"
+            >
+              6X
+            </h1>
+            <p
+              class="text-[12px] sm:text-[14px] md:text-[16px] text-center mt-1"
+            >
+              Health and wellness spend<sup>2</sup>
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center mb-6 sm:mb-0">
+            <h1
+              class="font-[bizantheum] text-4xl sm:text-5xl md:text-[70px] font-bold leading-[0.9]"
+            >
+              2X
+            </h1>
+            <p
+              class="text-[12px] sm:text-[14px] md:text-[16px] text-center mt-1"
+            >
+              Everything Else
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center">
+            <h1
+              class="font-[bizantheum] text-4xl sm:text-5xl md:text-[70px] leading-[0.9]"
+            >
+              $399
+            </h1>
+            <p
+              class="text-[12px] sm:text-[14px] md:text-[16px] text-center mt-1"
+            >
+              Annual Fee<sup>1</sup>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- fitness-card-sections -->
+      <div class="w-full pt-4 md:pt-[10px] pb-4 md:pb-[10px] px-4">
+        <div
+          class="fitness-cards flex flex-col md:flex-row items-center gap-4 md:gap-[20px]"
+        >
+          <!-- First card -->
+          <div
+            class="fitness-card w-full md:w-[calc(33.33%-10px)] h-[200px] rounded-[10px] overflow-hidden relative mb-4 md:mb-0"
+          >
+            <div class="gradient"></div>
+            <img
+              class="object-cover w-full h-full"
+              src="https://images.unsplash.com/photo-1584464367415-2e7ff6482b54?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Yoga fitness activity"
+            />
+            <div
+              class="caption p-2 sm:p-[10px] absolute bottom-0 left-0 flex items-center gap-2 sm:gap-[10px] z-10"
+            >
+              <div
+                class="logo w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./fitness-logo1.jpg"
+                  alt="Yoga fitness logo"
+                />
+              </div>
+              <div class="info">
+                <h3
+                  class="text-base sm:text-[18px] md:text-[20px] font-[bizantheum] font-bold"
+                >
+                  Yoga Plus
+                </h3>
+                <p class="text-[10px] sm:text-[12px]">$50 credit</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second card -->
+          <div
+            class="fitness-card w-full md:w-[calc(33.33%-10px)] h-[200px] rounded-[10px] overflow-hidden relative mb-4 md:mb-0"
+          >
+            <div class="gradient"></div>
+            <img
+              class="object-cover w-full h-full"
+              src="https://images.unsplash.com/photo-1584863231364-2edc166de576?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Obe Fitness activity"
+            />
+            <div
+              class="caption p-2 sm:p-[10px] absolute bottom-0 left-0 flex items-center gap-2 sm:gap-[10px] z-10"
+            >
+              <div
+                class="logo w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./girl fitness logo.jpg"
+                  alt="Obe Fitness logo"
+                />
+              </div>
+              <div class="info">
+                <h3
+                  class="text-base sm:text-[18px] md:text-[20px] font-[bizantheum] font-bold"
+                >
+                  obe' Fitness
+                </h3>
+                <p class="text-[10px] sm:text-[12px]">Member Exclusive</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Third card -->
+          <div
+            class="fitness-card w-full md:w-[calc(33.33%-10px)] h-[200px] rounded-[10px] overflow-hidden relative"
+          >
+            <div class="gradient"></div>
+            <img
+              class="object-cover w-full h-full"
+              src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="Fyt personal training"
+            />
+            <div
+              class="caption p-2 sm:p-[10px] absolute bottom-0 left-0 flex items-center gap-2 sm:gap-[10px] z-10"
+            >
+              <div
+                class="logo w-[40px] h-[40px] sm:w-[50px] sm:h-[50px] rounded-full overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  src="./girl fitness logo2.jpg"
+                  alt="Fyt logo"
+                />
+              </div>
+              <div class="info">
+                <h3
+                  class="text-base sm:text-[18px] md:text-[20px] font-[bizantheum] font-bold"
+                >
+                  Fyt Personal Training
+                </h3>
+                <p class="text-[10px] sm:text-[12px]">$200 credit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page-3 -->
+      <div
+        class="w-full flex flex-col items-center justify-center px-4 sm:px-6 md:px-8"
+      >
+        <h1
+          class="pt-10 sm:pt-16 md:pt-[100px] font-[bizantheum] capitalize text-center text-4xl sm:text-5xl md:text-7xl leading-tight"
+        >
+          Discover the best in <br class="hidden sm:block" />health & wellness
+        </h1>
+
+        <p
+          class="p-4 sm:p-5 md:p-[30px] text-sm md:text-[14px] text-center max-w-lg md:max-w-2xl mx-auto"
+        >
+          The best wellness products and services, independently
+          <br class="hidden md:block" />reviewed and tested like nowhere else.
+        </p>
+
+        <button
+          class="bg-green-900 text-white px-4 py-2 mb-4 rounded-full hover:bg-white hover:text-green-900 hover:border hover:border-green-900 transition-all duration-300 text-sm sm:text-base w-full sm:w-auto max-w-[200px] sm:max-w-xs"
+        >
+          Check Out The Nessie
+        </button>
+      </div>
+
+      <!-- page-3 suppliment cards -->
+      <div
+        class="pt-[50px] w-full cards flex flex-wrap justify-center items-center gap-5 pb-[80px] px-4"
+      >
+        <!-- Card 1 -->
+        <div
+          class="supliment-card w-full sm:w-[45%] md:w-[30%] h-[250px] sm:h-[300px] md:h-[350px] rounded-[10px] overflow-hidden relative"
+        >
+          <div class="supliment-gradient"></div>
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1614859278976-b81d9a4b24a6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="supliment-caption p-4 sm:p-[20px] absolute top-0 left-0">
+            <h3
+              class="font-[voyage] text-lg sm:text-[25px] font-bold text-gray-600 relative"
+            >
+              <span class="absolute -top-4 left-0 text-sm sm:text-base"
+                >The</span
+              >
+              Nessie<span class="text-green-900">Eat</span>
+            </h3>
+            <p
+              class="text-xl sm:text-[30px] font-[bizantheum] font-bold leading-[1]"
+            >
+              The Best Hyaluronic <br />Acid Supplements
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="supliment-card w-full sm:w-[45%] md:w-[30%] h-[250px] sm:h-[300px] md:h-[350px] rounded-[10px] overflow-hidden relative"
+        >
+          <div class="supliment-gradient"></div>
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1687200267371-c165fe330f99?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="supliment-caption p-4 sm:p-[20px] absolute top-0 left-0">
+            <h3
+              class="font-[voyage] text-lg sm:text-[25px] font-bold text-gray-700 relative"
+            >
+              <span class="absolute -top-4 left-0 text-sm sm:text-base"
+                >The</span
+              >
+              Nessie<span class="text-blue-900">Move</span>
+            </h3>
+            <p
+              class="text-xl sm:text-[30px] font-[bizantheum] font-bold leading-[1]"
+            >
+              The Best Vitamin <br />For Your Brain
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="supliment-card w-full sm:w-[45%] md:w-[30%] h-[250px] sm:h-[300px] md:h-[350px] rounded-[10px] overflow-hidden relative"
+        >
+          <div class="supliment-gradient"></div>
+          <img
+            class="object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1612540943959-7806c4c2517e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+          <div class="supliment-caption p-4 sm:p-[20px] absolute top-0 left-0">
+            <h3
+              class="font-[voyage] text-lg sm:text-[25px] font-bold text-gray-600 relative"
+            >
+              <span class="absolute -top-4 left-0 text-sm sm:text-base"
+                >The</span
+              >
+              Nessie<span class="text-pink-900">Care</span>
+            </h3>
+            <p
+              class="text-xl sm:text-[30px] font-[bizantheum] font-bold leading-[1]"
+            >
+              The Best Medicine <br />For Depression
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- page-4 -->
+      <div
+      class="w-full pt-[70px] pb-[250px] bg-[linear-gradient(rgba(0,0,0,0.1),rgba(255,255,255,0.2)),url(https://img.freepik.com/free-photo/supermarket-banner-with-food_23-2149500984.jpg?t=st=1739648625~exp=1739652225~hmac=7906099f412d380443c310002072548246368bfcc7a90ec9ce98a8189db5e96d&w=1380)] bg-cover bg-[20%] sm:bg-center flex flex-col items-center justify-center text-white"
+      >
+        <h1
+          class="font-[bizantheum] capitalize text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl"
+        >
+          Doing Well <br />& Doing Good
+        </h1>
+
+        <p class="p-4 sm:p-[30px] text-sm sm:text-[16px] text-center">
+          We're pending B Corp and a seasoned team of dreamers and
+          <br class="hidden sm:block" />doers dedicated to building a world
+          where everyone does well.
+        </p>
+
+        <button
+          class="bg-white text-black px-5 py-2 rounded-full hover:bg-green-900 hover:text-white"
+        >
+          Join Our Team
+        </button>
+      </div>
+
+      <!-- page-5 -->
+      <div
+        class="w-full pt-[70px] bg-white bg-gradient-to-b from-white to-[#ecfee4] flex flex-col items-center justify-center pb-[20px]"
+      >
+        <!-- Heading -->
+        <h1
+          class="font-[bizantheum] capitalize text-center text-4xl md:text-6xl lg:text-8xl"
+        >
+          Reserve<br />your Card
+        </h1>
+
+        <!-- Description -->
+        <p class="p-[20px] md:p-[30px] text-[12px] md:text-[14px] text-center">
+          We're still in beta.<br />Reserve your spot to join the next available
+          batch.<sup>3</sup>
+        </p>
+
+        <!-- Button -->
+        <button
+          class="bg-green-900 text-white px-5 py-2 rounded-full hover:bg-white hover:text-green-900 hover:border hover:border-green-900 transition-colors duration-300"
+        >
+          Reserve
+        </button>
+
+        <!-- FYI Note -->
+        <p class="p-[10px] text-[10px] md:text-[12px] text-center">
+          FYI : The card's app is iPhone-only for now
+        </p>
+
+        <!-- Image -->
+        <img
+          class="w-[80%] max-w-[300px] md:max-w-[400px] lg:max-w-[550px] mt-[20px]"
+          src="./cards.png"
+          alt="Credit Cards"
+        />
+      </div>
+
+      <!-- footer -->
+      <footer class="w-full p-4 md:p-8 bg-[#ECFEE4] text-black">
+        <!-- Footer Top Section -->
+        <div
+          class="footer-up flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 pb-4"
+        >
+          <!-- Left Section -->
+          <div class="left text-center md:text-left">
+            <h2
+              class="font-[bizantheum] text-2xl md:text-3xl font-bold leading-tight"
+            >
+              Ness
+            </h2>
+            <p class="text-sm md:text-base">
+              &#169; 2022 Ness Well, Inc. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Right Section -->
+          <div class="right text-center md:text-left">
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4"
+            >
+              <p class="text-sm md:text-base">The Nessie</p>
+              <p class="text-sm md:text-base">Terms of service</p>
+              <p class="text-sm md:text-base">Partner program</p>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 mt-2"
+            >
+              <p class="text-sm md:text-base">Careers</p>
+              <p class="text-sm md:text-base">Privacy policy</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider Line -->
+        <div class="line w-full h-px bg-black my-4"></div>
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="footer-down flex flex-col md:flex-row items-start justify-center gap-4 md:gap-8 pt-4"
+        >
+          <!-- Left Section -->
+          <div class="left w-full md:w-1/2 flex flex-col gap-2">
+            <p class="text-sm md:text-base">
+              The Ness Credit card is issued by The Bank of Missouri, member
+              FDIC, pursuant to a license from Mastercard, and serviced by Ness
+              Well Financial, LLC (NMLS #2406384).
+            </p>
+            <p class="text-sm md:text-base">
+              All non-Ness logos shown are for illustrative purposes and remain
+              the property of their respective owners.
+            </p>
+          </div>
+
+          <!-- Right Section -->
+          <div class="right w-full md:w-1/2">
+            <ol class="list-decimal pl-4 text-sm md:text-base">
+              <li>
+                The Ness card is a charge card. This means there is no APR, and
+                your balance is due in full each month. Learn more about the
+                Ness Card's terms & fees
+                <a href="#" class="text-green-900 underline">here.</a>
+              </li>
+              <li>
+                See
+                <a href="#" class="text-green-900 underline">rewards terms</a>
+                for details. Rewards terms and partners are subject to change.
+              </li>
+              <li>
+                Access to a Ness Card account is subject to credit approval. You
+                must be at least 18 years old (or the age of majority in your
+                state) and reside in the continental US to apply. An approved
+                Ness Card application will result in a hard credit inquiry,
+                which may impact your credit score.
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- Footer Credit Section -->
+        <p class="text-center text-xs md:text-sm mt-4">
+          This page is redesigned by
+          <a
+            href="https://www.linkedin.com/in/adarsh-vardhan-838a64293/"
+            class="text-green-900"
+          >
+          <i class="ri-linkedin-fill"></i> Adarsh Vardhan
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      // Enhanced JavaScript for smooth mobile menu animation
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu-dropdown");
+
+        menuButton.addEventListener("click", function () {
+          // Toggle visibility
+          if (mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.remove("hidden");
+            // Give a small delay before adding the scale transform for smooth animation
+            setTimeout(() => {
+              mobileMenu.classList.remove("scale-y-0");
+            }, 10);
+          } else {
+            mobileMenu.classList.add("scale-y-0");
+            // Wait for transition to finish before hiding
+            setTimeout(() => {
+              mobileMenu.classList.add("hidden");
+            }, 300);
+          }
+        });
+
+        // Close menu if clicking outside
+        document.addEventListener("click", function (event) {
+          if (
+            !menuButton.contains(event.target) &&
+            !mobileMenu.contains(event.target) &&
+            !mobileMenu.classList.contains("hidden")
+          ) {
+            mobileMenu.classList.add("scale-y-0");
+            setTimeout(() => {
+              mobileMenu.classList.add("hidden");
+            }, 300);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
